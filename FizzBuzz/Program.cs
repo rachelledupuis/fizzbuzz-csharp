@@ -8,22 +8,27 @@ namespace FizzBuzz
         {
             for (int i = 1; i <= 100; i++)
             {
+                Console.WriteLine(NumberRules(i));
+            }
+            
+        }
+        static string NumberRules(int number)
+        {
                 string result = "";
 
-                if (i % 3 == 0) 
+                if (number % 3 == 0) 
                 {
                     result += "Fizz";
                 }
-                if (i % 5 == 0)
+                if (number % 5 == 0)
                 {
                     result += "Buzz";
                 }
                 if (result == "")
                 {
-                    result = i.ToString();
+                    result = number.ToString();
                 }
-                Console.WriteLine(result);
-            }
+                return result;
         }
     }
 }
