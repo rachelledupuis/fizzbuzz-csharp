@@ -24,6 +24,10 @@ namespace FizzBuzz
                 {
                     result += "Buzz";
                 }
+                if (number % 7 == 0)
+                {
+                    result += "Bang";
+                }
                 if (result == "")
                 {
                     result = number.ToString();
