@@ -28,6 +28,10 @@ namespace FizzBuzz
                 {
                     result += "Bang";
                 }
+                if (number % 11 == 0)
+                {
+                    result = "Bong";
+                }
                 if (result == "")
                 {
                     result = number.ToString();
