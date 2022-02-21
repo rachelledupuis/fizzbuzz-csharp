@@ -8,7 +8,17 @@ namespace FizzBuzz
         {
             for (int i = 1; i <= 100; i++)
             {
-                Console.WriteLine(i);
+                string result = "";
+
+                if (i % 3 == 0) 
+                {
+                    result += "Fizz";
+                }
+                if (result == "")
+                {
+                    result = i.ToString();
+                }
+                Console.WriteLine(result);
             }
         }
     }
