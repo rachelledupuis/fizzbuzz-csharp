@@ -6,10 +6,14 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-            for (int i = 1; i <= 100; i++)
+            List<string> numbers = new List<string>();
+
+            for (int i = 1; i <= 110; i++)
             {
-                Console.WriteLine(NumberRules(i));
+                numbers.Add(NumberRules(i));
             }
+            
+            numbers.ForEach(Console.WriteLine);
             
         }
         static string NumberRules(int number)
